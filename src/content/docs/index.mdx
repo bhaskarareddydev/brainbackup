@@ -1,20 +1,22 @@
 ---
-title: Welcome to Starlight
+title: BrainBackup
 description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+  title: ''
+  tagline: ''
 ---
+<div style="text-align:center; margin: 3rem 0 2rem;">
+<h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1; margin: 0;">
+<span style="color:#4F46E5 !important; font-size:1.15em;">B</span><span style="color:#1a1a1a !important;">rain</span><span style="color:#F59E0B !important; font-size:1.15em;">B</span><span style="color:#1a1a1a !important;">ackup</span>
+</h1>
+<p style="font-size: 1.25rem; color: var(--sl-color-gray-2); margin-top: 0.75rem;">A place to store things you might forget</p>
+<p style="display:inline-block; margin-top: 1.25rem; padding: 0.4rem 1.1rem; background: #EEF2FF; border-radius: 999px; font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase; color: #4F46E5; font-weight: 600;">✍️ Author: Bhaskar Reddy</p>
+<div style="margin-top: 2rem; display:flex; gap:1rem; justify-content:center;">
+<a href="/guides/example/" style="background:#4F46E5; color:white; padding:0.75rem 1.5rem; border-radius:999px; font-weight:600; text-decoration:none;">Example Guide →</a>
+<a href="https://starlight.astro.build" style="padding:0.75rem 1.5rem; color:inherit; text-decoration:none;">Read the Starlight docs ↗</a>
+</div>
+</div>
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
@@ -32,9 +34,6 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		Add Markdown or MDX files to `src/content/docs` to create new pages.
 	</Card>
 	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+    Edit your `astro.config.mjs` file.
+  </Card>
 </CardGrid>
