@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 /* ===== Clean white/light background ===== */
@@ -61,3 +62,6 @@ a { color: #2563EB !important; }
   color: #1D4ED8 !important;
   font-weight: 600;
 }
+
+/* ===== Logo brain icon pulse animation ===== */
+@keyframes bbPulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
