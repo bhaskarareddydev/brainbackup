@@ -7,11 +7,19 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'BrainBackup',
+			customCss: ['./src/styles/custom.css'],
 			components: {
               SiteTitle: './src/components/SiteTitle.astro',
   },
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
+				{
+					label: 'MongoDB World',
+					items: [
+						{ label: 'Overview', slug: 'mongodb-world' },
+						{ label: 'Administration', slug: 'mongodb-world/administration' },
+					],
+				},
 				{
 					label: 'Guides',
 					items: [

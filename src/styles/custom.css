@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* ===== Clean white/light background ===== */
+html, body {
+  background: #f7f9fc !important;
+}
+
+/* ===== Bold sans-serif headings ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  font-weight: 800 !important;
+  color: #1a1f2e !important;
+  letter-spacing: -0.02em;
+}
+
+/* ===== Body text ===== */
+body, p, li, td, .sl-markdown-content {
+  font-family: 'Inter', -apple-system, sans-serif;
+  color: #333c4d !important;
+}
+
+/* ===== Blue accent everywhere (links, highlights) ===== */
+:root {
+  --sl-color-bg: #f7f9fc;
+  --sl-color-bg-nav: #ffffff;
+  --sl-color-bg-sidebar: #ffffff;
+  --sl-color-text-accent: #2563EB;
+  --sl-color-accent-low: #EFF6FF;
+  --sl-color-accent: #2563EB;
+  --sl-color-accent-high: #1D4ED8;
+  --sl-color-hairline: #e5e9f0;
+}
+
+a { color: #2563EB !important; }
+
+/* ===== Nav bar - clean white with subtle shadow ===== */
+.header {
+  background: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+  border-bottom: 1px solid #e5e9f0 !important;
+}
+.sidebar {
+  background: #ffffff !important;
+  border-right: 1px solid #e5e9f0 !important;
+}
+
+/* ===== Card-style content sections ===== */
+.sl-markdown-content > * {
+  background: transparent;
+}
+
+/* ===== Dark code blocks (matches reference site) ===== */
+.expressive-code {
+  border-radius: 10px !important;
+  background: #0f1729 !important;
+}
+
+/* ===== Sidebar active link ===== */
+.sidebar a[aria-current="page"] {
+  background: #EFF6FF !important;
+  color: #1D4ED8 !important;
+  font-weight: 600;
+}
